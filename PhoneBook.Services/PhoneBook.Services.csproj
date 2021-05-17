@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\PhoneBook.DAL\PhoneBook.DAL.csproj" />
+    <ProjectReference Include="..\PhoneBook.DTO\PhoneBook.DTO.csproj" />
+    <ProjectReference Include="..\PhoneBook.EF.Core\PhoneBook.EF.Core.csproj" />
+    <ProjectReference Include="..\PhoneBook.Enums\PhoneBook.Enums.csproj" />
+  </ItemGroup>
+
+</Project>

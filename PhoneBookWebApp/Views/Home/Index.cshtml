@@ -1,0 +1,82 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+@model PhoneContactsListViewModel
+
+<div class="text-center">
+    <h1 class="display-4">Welcome to Phone Book</h1>
+    <p>Add or search phone contacts</p>
+</div>
+@using (Html.BeginForm("AddPhoneContact", "Home"))
+{
+    <h3>Add a new contact</h3>
+    <br />
+    <br />
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <label for="name">Name: </label>
+            </div>
+            <div class="col">
+                <label for="cell">Cell: </label>
+            </div>
+            <div class="col">
+                <label for="home">Home: </label>
+            </div>
+            <div class="col">
+                <label for="work">Work: </label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <input type="text" value="" id="txtName" name="name" required maxlength="50" />
+            </div>
+            <div class="col">
+                <input type="number" value="" id="txtCellPhoneNumber" name="cellphoneNumber" minlength="10" maxlength="10" />
+            </div>
+            <div class="col">
+                <input type="number" value="" id="txtHomePhoneNumber" name="homePhoneNumber" minlength="10" maxlength="10" />
+            </div>
+            <div class="col">
+                <input type="number" value="" id="txtWorkPhoneNumber" name="workPhoneNumber" minlength="10" maxlength="10" />
+            </div>
+        </div>
+    </div>
+    <br />
+    <input type="submit" value="Add Contact" id="btnAddContact" />
+    <br />
+    <br />
+    <br />
+}
+@using (Html.BeginForm("SearchPhoneContact", "Home"))
+{
+    <h3>Serach</h3>
+    <input type="text" value="" id="txtSearchContacts" />
+    <input type="submit" value="Search Contact" id="btnSearchContact" />
+    <div class="container">
+        <br />
+        <br />
+        <br />
+        @if (Model != null && Model.PhoneContacts != null && Model.PhoneContacts.Count > 0)
+        {
+            <div class="row">
+                <div class="col"><h3>Name</h3></div>
+                <div class="col"><h3>Cell</h3></div>
+                <div class="col"><h3>Home</h3></div>
+                <div class="col"><h3>Work</h3></div>
+            </div>
+            <br />
+            foreach (var item in Model.PhoneContacts)
+            {
+                <div class="row">
+                    <div class="col">@item.Name</div>
+                    <div class="col">@item.CellPhoneNumber</div>
+                    <div class="col">@item.HomePhoneNumber</div>
+                    <div class="col">@item.WorkPhoneNumber</div>
+                </div>
+                <br />
+            }
+        }
+    </div>
+}
+

@@ -1,0 +1,9 @@
+C:\Work\PhoneBookApi\PhoneBook.DAL\bin\Debug\netcoreapp3.1\PhoneBook.DAL.deps.json
+C:\Work\PhoneBookApi\PhoneBook.DAL\bin\Debug\netcoreapp3.1\PhoneBook.DAL.dll
+C:\Work\PhoneBookApi\PhoneBook.DAL\bin\Debug\netcoreapp3.1\PhoneBook.DAL.pdb
+C:\Work\PhoneBookApi\PhoneBook.DAL\obj\Debug\netcoreapp3.1\PhoneBook.DAL.AssemblyInfoInputs.cache
+C:\Work\PhoneBookApi\PhoneBook.DAL\obj\Debug\netcoreapp3.1\PhoneBook.DAL.AssemblyInfo.cs
+C:\Work\PhoneBookApi\PhoneBook.DAL\obj\Debug\netcoreapp3.1\PhoneBook.DAL.csproj.CoreCompileInputs.cache
+C:\Work\PhoneBookApi\PhoneBook.DAL\obj\Debug\netcoreapp3.1\PhoneBook.DAL.dll
+C:\Work\PhoneBookApi\PhoneBook.DAL\obj\Debug\netcoreapp3.1\PhoneBook.DAL.pdb
+C:\Work\PhoneBookApi\PhoneBook.DAL\obj\Debug\netcoreapp3.1\PhoneBook.DAL.csprojAssemblyReference.cache

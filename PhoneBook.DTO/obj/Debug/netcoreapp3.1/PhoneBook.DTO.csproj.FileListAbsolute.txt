@@ -1,0 +1,12 @@
+C:\Work\PhoneBookApi\PhoneBook.DTO\bin\Debug\netcoreapp3.1\PhoneBook.DTO.deps.json
+C:\Work\PhoneBookApi\PhoneBook.DTO\bin\Debug\netcoreapp3.1\PhoneBook.DTO.dll
+C:\Work\PhoneBookApi\PhoneBook.DTO\bin\Debug\netcoreapp3.1\PhoneBook.DTO.pdb
+C:\Work\PhoneBookApi\PhoneBook.DTO\bin\Debug\netcoreapp3.1\PhoneBook.Enums.dll
+C:\Work\PhoneBookApi\PhoneBook.DTO\bin\Debug\netcoreapp3.1\PhoneBook.Enums.pdb
+C:\Work\PhoneBookApi\PhoneBook.DTO\obj\Debug\netcoreapp3.1\PhoneBook.DTO.csprojAssemblyReference.cache
+C:\Work\PhoneBookApi\PhoneBook.DTO\obj\Debug\netcoreapp3.1\PhoneBook.DTO.AssemblyInfoInputs.cache
+C:\Work\PhoneBookApi\PhoneBook.DTO\obj\Debug\netcoreapp3.1\PhoneBook.DTO.AssemblyInfo.cs
+C:\Work\PhoneBookApi\PhoneBook.DTO\obj\Debug\netcoreapp3.1\PhoneBook.DTO.csproj.CoreCompileInputs.cache
+C:\Work\PhoneBookApi\PhoneBook.DTO\obj\Debug\netcoreapp3.1\PhoneBook.DTO.csproj.CopyComplete
+C:\Work\PhoneBookApi\PhoneBook.DTO\obj\Debug\netcoreapp3.1\PhoneBook.DTO.dll
+C:\Work\PhoneBookApi\PhoneBook.DTO\obj\Debug\netcoreapp3.1\PhoneBook.DTO.pdb

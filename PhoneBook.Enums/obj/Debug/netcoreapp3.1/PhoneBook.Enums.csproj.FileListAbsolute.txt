@@ -1,0 +1,9 @@
+C:\Work\PhoneBookApi\PhoneBook.Enums\bin\Debug\netcoreapp3.1\PhoneBook.Enums.deps.json
+C:\Work\PhoneBookApi\PhoneBook.Enums\bin\Debug\netcoreapp3.1\PhoneBook.Enums.dll
+C:\Work\PhoneBookApi\PhoneBook.Enums\bin\Debug\netcoreapp3.1\PhoneBook.Enums.pdb
+C:\Work\PhoneBookApi\PhoneBook.Enums\obj\Debug\netcoreapp3.1\PhoneBook.Enums.AssemblyInfoInputs.cache
+C:\Work\PhoneBookApi\PhoneBook.Enums\obj\Debug\netcoreapp3.1\PhoneBook.Enums.AssemblyInfo.cs
+C:\Work\PhoneBookApi\PhoneBook.Enums\obj\Debug\netcoreapp3.1\PhoneBook.Enums.csproj.CoreCompileInputs.cache
+C:\Work\PhoneBookApi\PhoneBook.Enums\obj\Debug\netcoreapp3.1\PhoneBook.Enums.dll
+C:\Work\PhoneBookApi\PhoneBook.Enums\obj\Debug\netcoreapp3.1\PhoneBook.Enums.pdb
+C:\Work\PhoneBookApi\PhoneBook.Enums\obj\Debug\netcoreapp3.1\PhoneBook.Enums.csprojAssemblyReference.cache

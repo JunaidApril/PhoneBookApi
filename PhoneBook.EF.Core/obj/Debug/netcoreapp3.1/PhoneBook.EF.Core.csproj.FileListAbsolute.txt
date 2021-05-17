@@ -1,0 +1,17 @@
+C:\Work\PhoneBookApi\PhoneBook.EF.Core\bin\Debug\netcoreapp3.1\PhoneBook.EF.Core.deps.json
+C:\Work\PhoneBookApi\PhoneBook.EF.Core\bin\Debug\netcoreapp3.1\PhoneBook.EF.Core.runtimeconfig.json
+C:\Work\PhoneBookApi\PhoneBook.EF.Core\bin\Debug\netcoreapp3.1\PhoneBook.EF.Core.runtimeconfig.dev.json
+C:\Work\PhoneBookApi\PhoneBook.EF.Core\bin\Debug\netcoreapp3.1\PhoneBook.EF.Core.dll
+C:\Work\PhoneBookApi\PhoneBook.EF.Core\bin\Debug\netcoreapp3.1\PhoneBook.EF.Core.pdb
+C:\Work\PhoneBookApi\PhoneBook.EF.Core\bin\Debug\netcoreapp3.1\PhoneBook.DAL.dll
+C:\Work\PhoneBookApi\PhoneBook.EF.Core\bin\Debug\netcoreapp3.1\PhoneBook.Enums.dll
+C:\Work\PhoneBookApi\PhoneBook.EF.Core\bin\Debug\netcoreapp3.1\PhoneBook.DAL.pdb
+C:\Work\PhoneBookApi\PhoneBook.EF.Core\bin\Debug\netcoreapp3.1\PhoneBook.Enums.pdb
+C:\Work\PhoneBookApi\PhoneBook.EF.Core\obj\Debug\netcoreapp3.1\PhoneBook.EF.Core.csprojAssemblyReference.cache
+C:\Work\PhoneBookApi\PhoneBook.EF.Core\obj\Debug\netcoreapp3.1\PhoneBook.EF.Core.AssemblyInfoInputs.cache
+C:\Work\PhoneBookApi\PhoneBook.EF.Core\obj\Debug\netcoreapp3.1\PhoneBook.EF.Core.AssemblyInfo.cs
+C:\Work\PhoneBookApi\PhoneBook.EF.Core\obj\Debug\netcoreapp3.1\PhoneBook.EF.Core.csproj.CoreCompileInputs.cache
+C:\Work\PhoneBookApi\PhoneBook.EF.Core\obj\Debug\netcoreapp3.1\PhoneBook.EF.Core.csproj.CopyComplete
+C:\Work\PhoneBookApi\PhoneBook.EF.Core\obj\Debug\netcoreapp3.1\PhoneBook.EF.Core.dll
+C:\Work\PhoneBookApi\PhoneBook.EF.Core\obj\Debug\netcoreapp3.1\PhoneBook.EF.Core.pdb
+C:\Work\PhoneBookApi\PhoneBook.EF.Core\obj\Debug\netcoreapp3.1\PhoneBook.EF.Core.genruntimeconfig.cache
