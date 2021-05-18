@@ -1,4 +1,5 @@
-﻿using PhoneBook.EF.Core.Context;
+﻿using Microsoft.EntityFrameworkCore;
+using PhoneBook.EF.Core.Context;
 using PhoneBook.EF.Core.Models;
 using System;
 using System.Collections.Generic;
@@ -15,10 +16,12 @@ namespace PhoneBook.EF.Core.Repositories
         {
             this._context = context;
         }
-        public async Task<List<PhoneBookList>> GetByName(string name)
+        public virtual async Task<List<PhoneBookList>> GetByName(string name)
         {
-            return _context.PhoneBookList.Where(x => x.Name.Contains(name)).ToList();
+            if(name != null)
+                return await _context.PhoneBookList.Where(x => x.Name.Contains(name)).ToListAsync();
+
+            return new List<PhoneBookList>();
         }
-        // This can be used to add specific new methods for the phonebooklist in the future
     }
 }

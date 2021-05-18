@@ -49,24 +49,27 @@ namespace PhoneBookApi.Controllers
 
                     if(!string.IsNullOrEmpty(cellphoneNumber))
                     {
-                        var cellNumberEntry = CreateEntryDto(EntryType.CellPhoneNumber, cellphoneNumber);
-                        entrieslist.Add(cellNumberEntry);
+                        var cellNumberEntry = await _phoneBookService.CreateEntryDto(EntryType.CellPhoneNumber, cellphoneNumber);
+                        if(cellNumberEntry.IsSuccess)
+                            entrieslist.Add(cellNumberEntry.Data);
                     }
                     if (!string.IsNullOrEmpty(homePhoneNumber))
                     {
-                        var homeNumberEntry = CreateEntryDto(EntryType.HomePhoneNumber, homePhoneNumber);
-                        entrieslist.Add(homeNumberEntry);
+                        var homeNumberEntry = await _phoneBookService.CreateEntryDto(EntryType.HomePhoneNumber, homePhoneNumber);
+                        if(homeNumberEntry.IsSuccess)
+                            entrieslist.Add(homeNumberEntry.Data);
                     }
                     if (!string.IsNullOrEmpty(workPhoneNumber))
                     {
-                        var workNumberEntry = CreateEntryDto(EntryType.WorkPhoneNumber, workPhoneNumber);
-                        entrieslist.Add(workNumberEntry);
+                        var workNumberEntry = await _phoneBookService.CreateEntryDto(EntryType.WorkPhoneNumber, workPhoneNumber);
+                        if(workNumberEntry.IsSuccess)
+                            entrieslist.Add(workNumberEntry.Data);
                     }
 
                     if(entrieslist != null && entrieslist.Count > 0)
                         phoneBookEntryDto.Entries = entrieslist;
 
-                    var result =await _phoneBookService.CreatePhoneBookEntry(phoneBookEntryDto);
+                    var result = await _phoneBookService.CreatePhoneBookEntry(phoneBookEntryDto);
 
                     if(result.IsSuccess)
                         return Ok();

@@ -45,7 +45,7 @@ namespace PhoneBook.Services
                     }
                 }
                 //Return positive result
-                return await Task.FromResult(SystemResult.Success());
+                return await Task.FromResult(SystemResult.Success("No contact was added"));
             }
             catch(Exception ex)
             {
@@ -182,7 +182,10 @@ namespace PhoneBook.Services
                 }
 
                 //Return positive result
-                return await Task.FromResult(SystemResult<List<PhoneContactResponseDto>>.Success(phoneContactResponseDtoList, "Success", ""));
+                if (phoneContactResponseDtoList != null && phoneContactResponseDtoList.Count > 0)                
+                    return await Task.FromResult(SystemResult<List<PhoneContactResponseDto>>.Success(phoneContactResponseDtoList, "Success", ""));
+
+                return await Task.FromResult(SystemResult<List<PhoneContactResponseDto>>.Success(phoneContactResponseDtoList, phoneBookList.Message, ""));
             }
             catch(Exception ex)
             {
@@ -209,7 +212,13 @@ namespace PhoneBook.Services
                     list = await _phoneBookListRepository.GetByName(name);
                 }
                 //Return positive result
-                return await Task.FromResult(SystemResult<List<PhoneBookList>>.Success(list, "Success", ""));
+                if (list != null && list.Count > 0)
+                {
+                    return await Task.FromResult(SystemResult<List<PhoneBookList>>.Success(list, "Success", ""));
+                }
+
+                return await Task.FromResult(SystemResult<List<PhoneBookList>>.Success(new List<PhoneBookList>(), "Contact not found"));
+                
             }
             catch(Exception ex)
             {
@@ -236,6 +245,32 @@ namespace PhoneBook.Services
                 //Send error result
                 return await Task.FromResult(new SystemResult<List<Entry>>(ex.Message));
             }
+        }
+
+        /// <summary>
+        /// Creates a entry dto to build the list for the phone book
+        /// </summary>
+        /// <param name="entryType"></param>
+        /// <param name="phoneNumber"></param>
+        /// <returns>EntryDto</returns>
+        public async Task<SystemResult<EntryDto>> CreateEntryDto(EntryType entryType, string phoneNumber)
+        {
+            var entry = new EntryDto();
+            entry.PhoneNumber = phoneNumber;
+            switch (entryType)
+            {
+                case EntryType.CellPhoneNumber:
+                    entry.Name = EntryType.CellPhoneNumber;
+                    break;
+                case EntryType.HomePhoneNumber:
+                    entry.Name = EntryType.HomePhoneNumber;
+                    break;
+                default:
+                    entry.Name = EntryType.WorkPhoneNumber;
+                    break;
+            }
+
+            return await Task.FromResult(SystemResult<EntryDto>.Success(entry, "Success", "")); ;
         }
     }
 }

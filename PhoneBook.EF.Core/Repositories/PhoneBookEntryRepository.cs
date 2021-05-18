@@ -1,4 +1,5 @@
-﻿using PhoneBook.EF.Core.Context;
+﻿using Microsoft.EntityFrameworkCore;
+using PhoneBook.EF.Core.Context;
 using PhoneBook.EF.Core.Models;
 using System;
 using System.Collections.Generic;
@@ -16,9 +17,12 @@ namespace PhoneBook.EF.Core.Repositories
             this._context = context;
         }
 
-        public async Task<List<Entry>> GetByPhoneBookId(int id)
+        public virtual async Task<List<Entry>> GetByPhoneBookId(int id)
         {
-            return _context.PhoneBookEntry.Where(x => x.PhoneBookId == id).ToList();
+            if(id > 0)
+                return await _context.PhoneBookEntry.Where(x => x.PhoneBookId == id).ToListAsync();
+
+            return new List<Entry>();
         }
 
     }

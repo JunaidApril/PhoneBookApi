@@ -48,7 +48,10 @@ namespace PhoneBookWebApp.Controllers
                 request.AddHeader("Content-Type", "application/json");
                 IRestResponse response = await client.ExecutePostAsync(request);
 
-                return View("Index", new PhoneContactsListViewModel());
+                //Return all contacts to the screen
+                var result = await GetAllContacts();
+
+                return View("Index", result);
             }
             catch(Exception ex)
             {
