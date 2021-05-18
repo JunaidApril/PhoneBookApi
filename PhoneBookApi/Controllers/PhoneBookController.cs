@@ -72,7 +72,7 @@ namespace PhoneBookApi.Controllers
                     var result = await _phoneBookService.CreatePhoneBookEntry(phoneBookEntryDto);
 
                     if(result.IsSuccess)
-                        return Ok();
+                        return Ok(result.ClientMessage);
                 }
                 return BadRequest("An error occured trying to save an entry");
             }

@@ -50,6 +50,8 @@ namespace PhoneBookWebApp.Controllers
 
                 //Return all contacts to the screen
                 var result = await GetAllContacts();
+                if (response != null && response.StatusCode == System.Net.HttpStatusCode.OK)
+                    result.AddContactClientMessage = response.Content.ToString();
 
                 return View("Index", result);
             }
@@ -87,7 +89,9 @@ namespace PhoneBookWebApp.Controllers
                             phoneContactsListViewModel.PhoneContacts.Add(phoneContactsViewModel);
                         }
                         return phoneContactsListViewModel;
-                    } 
+                    }
+                    if (!string.IsNullOrEmpty(name))
+                        return new PhoneContactsListViewModel() { SearchContactClientMessage = "Contact was not found" };
                 }
                 return new PhoneContactsListViewModel();
             }

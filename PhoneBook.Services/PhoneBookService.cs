@@ -41,11 +41,13 @@ namespace PhoneBook.Services
 
                         //return success
                         if(resultEntries.IsSuccess)
-                            return await Task.FromResult(SystemResult.Success());
+                            return await Task.FromResult(SystemResult.Success("", "Contact was added"));
                     }
+                    if(resultStoreEntry.IsSuccess)
+                        return await Task.FromResult(SystemResult.Success("", "Contact was added"));
                 }
                 //Return positive result
-                return await Task.FromResult(SystemResult.Success("No contact was added"));
+                return await Task.FromResult(SystemResult.Success("", "No contact was added"));
             }
             catch(Exception ex)
             {

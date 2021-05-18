@@ -45,13 +45,17 @@
     <br />
     <input type="submit" value="Add Contact" id="btnAddContact" />
     <br />
+    @Model.AddContactClientMessage
     <br />
     <br />
 }
 @using (Html.BeginForm("SearchPhoneContact", "Home"))
 {
     <h3>Serach</h3>
-    <input type="text" value="" id="txtSearchContacts" name="name"  />
+    <br />
+    @Model.SearchContactClientMessage
+    <br />
+    <input type="text" value="" id="txtSearchContacts" name="name" />
     <input type="submit" value="Search Contact" id="btnSearchContact" />
     <div class="container">
         <br />

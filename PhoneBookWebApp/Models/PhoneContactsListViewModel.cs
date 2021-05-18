@@ -12,6 +12,10 @@ namespace PhoneBookWebApp.Models
             PhoneContacts = new List<PhoneContactViewModel>();
         }
         public List<PhoneContactViewModel> PhoneContacts { get; set; }
+
+        public string AddContactClientMessage { get; set; }
+
+        public string SearchContactClientMessage { get; set; }
     }
 
     public class PhoneContactViewModel
